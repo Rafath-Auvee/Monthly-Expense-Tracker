@@ -30,31 +30,50 @@
 
     <main class="container">
         <section class="row gx-5 my-5">
-            <div class="col-lg-6 col-sm-12 column_property">
-                <img class="img-fluid" src="assets/image/money2.jpg" alt="" srcset="">
+            <div class="col-lg-6 col-sm-12 ">
+                <img class="img-fluid" src="assets/image/money.jpg" alt="" srcset="">
             </div>
             <div class="col-lg-6 col-sm-12 column_property">
-                <div class="text-center Income_Title">Income</div>
+                <div class="text-center Income_Title ">Income</div>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Income</h5>
-                    <input class="mx-3" type="number" name="" id="">
+                    <input id="income-input" min="0" class="mx-3" type="number" name="" id="" value="10000">
                 </div>
                 <div class="text-center Income_Title mt-5">Expenses</div>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Food:</h5>
-                    <input class="mx-3" type="number" name="" id="">
+                    <input id="food-input" min="0" class="mx-3" type="number" name="" id="" value="3000">
 
                 </div>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Rent:</h5>
-                    <input class="mx-3" type="number" name="" id="">
+                    <input id="rent-input" min="0" class="mx-3" type="number" name="" id="" value="2000">
 
                 </div>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Clothes:</h5>
-                    <input class="mx-3" type="number" name="" id="">
+                    <input id="cloth-input" min="0" class="mx-3" type="number" name="" id="" value="500">
 
                 </div>
+
+                <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
+                    <button id="calculate-button" type="button" class="my-3 btn btn-primary btn-lg aqua_button">Calculate</button>
+
+                </div>
+                <div class="text-center Income_Title mt-3">Total Expenses: 5500 </div>
+
+                <div class="text-center Income_Title mt-3">Balance: 4500</div>
+
+                <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
+                    <h5 class="cost_name">Save:</h5>
+                    <input id="save-input" min="0" class="" type="number" name="" id="" value="20">
+                    <h5 class="percent mx-3">%</h5>
+                    <button id="save-button" class="btn btn-primary aqua_button" type="submit">Save</button>
+                </div>
+
+                <div class="text-center Income_Title mt-5">Saving Amount: 2000 </div>
+
+                <div class="text-center Income_Title mt-3">Remaining Balance: 2500 </div>
 
             </div>
             </div>
@@ -65,7 +84,8 @@
     <footer>
 
     </footer>
-
+    <!-- index.js  -->
+    <script src="assets/js/index.js"></script>
     <!-- bootstrap js cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
