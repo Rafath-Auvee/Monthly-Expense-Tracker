@@ -3,7 +3,37 @@
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-* {
-    /* font-family: 'Roboto', sans-serif; */
-    /* color: red; */
+.heading {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 59px;
+    color: #31A5AC;
+}
+
+input {
+    background: #DCDCDC;
+    border-radius: 2px;
+    border: none;
+    width: 229px;
+    height: 44px;
+}
+
+.Income_Title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.cost_name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
 }
