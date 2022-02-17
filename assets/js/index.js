@@ -9,7 +9,7 @@ for (const message of messages) {
 
 function valueParsing(input) {
     value = parseFloat(document.getElementById(input + "-input").value);
-    // document.getElementById(input + "-input").value = ""
+
     return value;
 }
 
@@ -48,6 +48,7 @@ function saveFunction() {
 
 function saveCondition(input, save, balance) {
     console.log("saving condition" + save + " " + balence)
+    document.getElementById(input + "-input").value = ""
     string = document.getElementById(input + "-error")
 
     if (balence <= 0) {
@@ -71,6 +72,7 @@ function saveCondition(input, save, balance) {
 }
 
 function expenseCondtion(input, income, expense) {
+
     console.log("expense condition")
     string = document.getElementById(input + "-error")
     if (income < expense) {
@@ -85,6 +87,7 @@ function expenseCondtion(input, income, expense) {
     } else {
         string.style.display = "none";
         valueShow(expense, balance)
+
     }
 }
 
@@ -108,6 +111,7 @@ function calculation() {
 }
 
 function inputCondition(input) {
+
     value = parseFloat(document.getElementById(input + "-input").value);
     string = document.getElementById(input + "-error")
     if (isNaN(value)) {
@@ -118,6 +122,7 @@ function inputCondition(input) {
         string.innerText = "Value can't be zero or negative"
     } else {
         string.style.display = "none";
+        document.getElementById(input + "-input").value = ""
     }
 }
 
