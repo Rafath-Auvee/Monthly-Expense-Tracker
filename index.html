@@ -21,52 +21,75 @@
 
 <body class="container">
 
+
+    <!-- Adding Header  -->
     <header>
         <h1 class="text-center my-5 heading">
-            Monthly Expense Tracker 💲
+            Monthly Expense Tracker 🧮
         </h1>
     </header>
 
 
     <main class="container">
+        <!-- 1 row 2 columns  -->
         <section class="row gx-5 my-5">
             <div class="col-lg-6 col-sm-12 mb-5">
+                <!-- left image  -->
                 <img class="img-fluid" src="assets/image/money.jpg" alt="" srcset="">
             </div>
             <div class="col-lg-6 col-sm-12 column_property mb-5">
+
+                <!-- Calculation  -->
+
                 <div class="text-center Income_Title ">Income</div>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Income</h5>
-
+                    <!-- income input  -->
                     <input id="income-input" min="0" class="mx-3" type="number" name="" id="" value="10000">
                 </div>
+                <!-- error message  -->
                 <h5 id="income-error" class="text-center message">Wrong Input</h5>
                 <div class="text-center Income_Title mt-5">Expenses</div>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Food:</h5>
+                    <!-- food input  -->
                     <input id="food-input" min="0" class="mx-3" type="number" name="" id="" value="3000">
 
                 </div>
+                <!-- error message  -->
                 <h5 id="food-error" class="text-center message">Wrong Input</h5>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Rent:</h5>
+                    <!-- rent input  -->
                     <input id="rent-input" min="0" class="mx-3" type="number" name="" id="" value="2000">
 
                 </div>
+
+
+                <!-- error message  -->
                 <h5 id="rent-error" class="text-center message">Wrong Input</h5>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Clothes:</h5>
+                    <!-- Cloth input  -->
                     <input id="cloth-input" min="0" class="mx-3" type="number" name="" id="" value="500">
                 </div>
+
+                <!-- error message  -->
                 <h5 id="cloth-error" class="text-center message">Wrong Input</h5>
+                <!-- error message  -->
                 <h5 id="total-error" class="text-center mt-5 message">Wrong Input</h5>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
 
+                    <!-- calculate button  -->
                     <button id="calculate-button" type="button" class="my-2 btn btn-primary btn-lg aqua_button">Calculate</button>
 
                 </div>
 
+                <!-- Total Expenses will be printed here  -->
+
                 <div class="text-center Income_Title mt-3">Total Expenses: <span id="expense">0</span></div>
+
+                <!-- Balance will be printed here  -->
 
                 <div class="text-center Income_Title mt-3">Balance: <span id="balance">0</span></div>
 
@@ -76,14 +99,16 @@
                     <h5 class="percent mx-3">%</h5>
                     <button id="save-button" class="btn btn-primary aqua_button" type="submit">Save</button>
                 </div>
+                <!-- error message  -->
                 <h5 id="save-error" class="text-center mt-5 message">Wrong Input</h5>
 
+                <!-- Saving Amount will be printed here  -->
                 <div class="text-center Income_Title mt-5">Saving Amount: <span id="save">0</span> </div>
-
+                <!-- Remaining Balance will be printed here  -->
                 <div class="text-center Income_Title mt-3">Remaining Balance: <span id="remain">0</span> </div>
 
             </div>
-            </div>
+
         </section>
     </main>
 
