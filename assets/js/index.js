@@ -2,7 +2,10 @@ const messages = document.getElementsByClassName("message")
 
 for (const message of messages) {
     message.style.display = "none";
+
 }
+
+
 
 function valueParsing(input) {
     value = parseFloat(document.getElementById(input + "-input").value);
@@ -50,6 +53,16 @@ function saveCondition(input, save, balance) {
     if (balence <= 0) {
         string.style.display = "block";
         string.innerText = "Balance can't be zero or Negative, so No Savings"
+        document.getElementById("save").innerText = 0
+        document.getElementById("remain").innerText = 0
+    } else if (isNaN(save)) {
+        string.style.display = "block";
+        string.innerText = "Saving amount is not a number. Invalid Input"
+        document.getElementById("save").innerText = 0
+        document.getElementById("remain").innerText = 0
+    } else if (balance <= save) {
+        string.style.display = "block";
+        string.innerText = "Saving can't be greater than balance"
         document.getElementById("save").innerText = 0
         document.getElementById("remain").innerText = 0
     } else {
