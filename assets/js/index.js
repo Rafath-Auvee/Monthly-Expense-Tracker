@@ -74,6 +74,11 @@ function saveCondition(input, save, balance) {
         string.innerText = "Saving amount is not a number. Invalid Input"
         document.getElementById("save").innerText = 0
         document.getElementById("remain").innerText = 0
+    } else if (parseFloat(document.getElementById("save-input").value) < 0) {
+        string.style.display = "block";
+        string.innerText = "Saving can't be negative"
+        document.getElementById("save").innerText = 0
+        document.getElementById("remain").innerText = 0
     } else if (save < 0) {
         // savings can't be zero 
         string.style.display = "block";
