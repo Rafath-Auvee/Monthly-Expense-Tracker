@@ -37,7 +37,7 @@ function valueShow(expense, balance) {
 // calculate savings value using income and save input
 
 function saving(income, save) {
-    return (income * save) / 100
+    return (income / 100) * save
 }
 
 // save function to getElementById income and save_amount then finding the remaining balance 
@@ -62,7 +62,7 @@ function saveCondition(input, save, balance) {
         //getting value using input name + "-error" 
     string = document.getElementById(input + "-error")
 
-    if (balence <= 0) {
+    if (balence < 0) {
         // if zero then no savings 
         string.style.display = "block";
         string.innerText = "Balance can't be zero or Negative, so No Savings"
@@ -74,10 +74,10 @@ function saveCondition(input, save, balance) {
         string.innerText = "Saving amount is not a number. Invalid Input"
         document.getElementById("save").innerText = 0
         document.getElementById("remain").innerText = 0
-    } else if (save <= 0) {
+    } else if (save < 0) {
         // savings can't be zero 
         string.style.display = "block";
-        string.innerText = "Saving can't be zero or negative"
+        string.innerText = "Saving can't be negative"
         document.getElementById("save").innerText = 0
         document.getElementById("remain").innerText = 0
     } else if (balance <= save) {
