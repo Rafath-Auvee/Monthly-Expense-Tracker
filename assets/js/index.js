@@ -80,7 +80,7 @@ function saveCondition(input, save, balance) {
         string.innerText = "Saving can't be negative"
         document.getElementById("save").innerText = 0
         document.getElementById("remain").innerText = 0
-    } else if (balance <= save) {
+    } else if (balance < save) {
         //checking if balance is less than savings
         string.style.display = "block";
         string.innerText = "Saving can't be greater than balance"
@@ -148,9 +148,9 @@ function inputCondition(input) {
     if (isNaN(value)) {
         string.style.display = "block";
         string.innerText = "Not a number or Empty Value"
-    } else if (value <= 0) {
+    } else if (value < 0) {
         string.style.display = "block";
-        string.innerText = "Value can't be zero or negative"
+        string.innerText = "Value can't be negative"
     } else {
         string.style.display = "none";
         // document.getElementById(input + "-input").value = ""
