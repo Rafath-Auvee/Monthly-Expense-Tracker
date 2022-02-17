@@ -33,6 +33,7 @@ input {
 .column_property {
     padding: 50px 0px 30px 0px;
     background: #F8F8F8;
+    box-shadow: -11px 11px 22px #aaaaaa, 11px -11px 22px #ffffff;
 }
 
 .cost_name {

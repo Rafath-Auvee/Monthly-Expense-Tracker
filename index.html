@@ -37,43 +37,50 @@
                 <div class="text-center Income_Title ">Income</div>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Income</h5>
+
                     <input id="income-input" min="0" class="mx-3" type="number" name="" id="" value="10000">
                 </div>
+                <h5 id="income-error" class="text-center message">Wrong Input</h5>
                 <div class="text-center Income_Title mt-5">Expenses</div>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Food:</h5>
                     <input id="food-input" min="0" class="mx-3" type="number" name="" id="" value="3000">
 
                 </div>
+                <h5 id="food-error" class="text-center message">Wrong Input</h5>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Rent:</h5>
                     <input id="rent-input" min="0" class="mx-3" type="number" name="" id="" value="2000">
 
                 </div>
+                <h5 id="rent-error" class="text-center message">Wrong Input</h5>
                 <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Clothes:</h5>
                     <input id="cloth-input" min="0" class="mx-3" type="number" name="" id="" value="500">
+                </div>
+                <h5 id="cloth-error" class="text-center message">Wrong Input</h5>
+                <h2 id="total-error" class="text-center mt-5 message">Wrong Input</h2>
+                <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
+
+                    <button id="calculate-button" type="button" class="my-2 btn btn-primary btn-lg aqua_button">Calculate</button>
 
                 </div>
 
-                <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
-                    <button id="calculate-button" type="button" class="my-3 btn btn-primary btn-lg aqua_button">Calculate</button>
+                <div class="text-center Income_Title mt-3">Total Expenses: <span id="expense">0</span></div>
 
-                </div>
-                <div class="text-center Income_Title mt-3">Total Expenses: 5500 </div>
+                <div class="text-center Income_Title mt-3">Balance: <span id="balance">0</span></div>
 
-                <div class="text-center Income_Title mt-3">Balance: 4500</div>
-
-                <div class="d-flex mt-4 align-content-center align-items-center justify-content-center">
+                <div class="d-flex flex-column flex-md-row mt-4 align-content-center align-items-center justify-content-center">
                     <h5 class="cost_name">Save:</h5>
                     <input id="save-input" min="0" class="" type="number" name="" id="" value="20">
                     <h5 class="percent mx-3">%</h5>
                     <button id="save-button" class="btn btn-primary aqua_button" type="submit">Save</button>
                 </div>
+                <h2 id="save-error" class="text-center mt-5 message">Wrong Input</h2>
 
-                <div class="text-center Income_Title mt-5">Saving Amount: 2000 </div>
+                <div class="text-center Income_Title mt-5">Saving Amount: <span id="save">0</span> </div>
 
-                <div class="text-center Income_Title mt-3">Remaining Balance: 2500 </div>
+                <div class="text-center Income_Title mt-3">Remaining Balance: <span id="remain">0</span> </div>
 
             </div>
             </div>
